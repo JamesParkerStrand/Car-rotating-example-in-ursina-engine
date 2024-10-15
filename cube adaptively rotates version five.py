@@ -17,11 +17,11 @@ def angle_between_vectors(u, v):
 application.frame_rate = 0
 
 terr = Terrain('heightmap', skip=25)
-cube = Entity(model=terr, scale=40, texture='grass', collider='mesh', debug=True)
+terrain = Entity(model=terr, scale=40, texture='grass', collider='mesh', debug=True)
 
 
 
-cube.y -= 10
+terrain.y -= 10
 
 # Creating a player
 player = FirstPersonController()
